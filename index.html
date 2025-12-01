@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Basic Understanding</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        background: #f4f7fa;
+        color: #222;
+        overflow-x: hidden;
+    }
+
+    /* Smooth fade-in animation */
+    .fade-in {
+        opacity: 0;
+        animation: fadeIn 1.4s forwards;
+    }
+
+    @keyframes fadeIn {
+        to { opacity: 1; }
+    }
+
+    header {
+        background: linear-gradient(135deg, #1a73e8, #004aad);
+        color: white;
+        padding: 50px 20px;
+        text-align: center;
+        animation: fadeIn 1.5s ease-out forwards;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+        font-weight: 600;
+    }
+
+    .subtext {
+        font-size: 1.1rem;
+        margin-top: 5px;
+    }
+
+    .container {
+        width: 85%;
+        max-width: 900px;
+        margin: 40px auto;
+        background: white;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        animation: fadeIn 1.8s ease-out forwards;
+    }
+
+    h2 {
+        color: #004aad;
+        margin-top: 0;
+        font-weight: 600;
+    }
+
+    img {
+        width: 100%;
+        border-radius: 10px;
+        margin: 15px 0;
+        box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    }
+
+    footer {
+        text-align: center;
+        padding: 18px;
+        background: #004aad;
+        color: white;
+        margin-top: 40px;
+        animation: fadeIn 2s ease-out forwards;
+    }
+
+    /* Floating animation for visual appeal */
+    .float {
+        animation: floating 4s ease-in-out infinite;
+    }
+
+    @keyframes floating {
+        0% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0px); }
+    }
+
+</style>
+</head>
+<body>
+
+<header class="fade-in">
+    <h1>AI Basic Understanding</h1>
+    <p class="subtext"><strong>Name:</strong> Y. Sadhvik Kamal</p>
+    <p class="subtext"><strong>School:</strong> Seven Lakes High School</p>
+    <p class="subtext"><strong>Grade:</strong> 12th Grade</p>
+</header>
+
+<div class="container fade-in">
+
+    <h2>What is Artificial Intelligence?</h2>
+    <p>
+        Artificial Intelligence (AI) is a field of computer science that allows machines to learn from data,
+        recognize patterns, make decisions, and solve problems—similar to how humans think.
+        It powers technologies like self-driving cars, medical diagnosis, chatbots, and more.
+    </p>
+
+    <img class="float" src="https://via.placeholder.com/900x350.png?text=Artificial+Intelligence" alt="AI Image">
+
+    <h2>Why AI Matters</h2>
+    <p>
+        AI is becoming essential in every major field—engineering, healthcare, business, education,
+        and even the arts. It helps improve accuracy, automate tasks, and uncover insights that
+        humans may overlook.
+    </p>
+
+    <h2>Python’s Role in AI</h2>
+    <p>
+        Python is the most widely used programming language in AI because of its simplicity and powerful libraries:
+    </p>
+    <ul>
+        <li>TensorFlow – deep learning</li>
+        <li>NumPy – numerical computing</li>
+        <li>Pandas – data analysis</li>
+        <li>scikit-learn – machine learning</li>
+    </ul>
+
+    <img class="float" src="https://via.placeholder.com/900x350.png?text=Python+for+AI" alt="Python Image">
+
+    <h2>Simple AI Code Example (Python)</h2>
+    <pre style="background:#eef; padding:15px; border-radius:8px; overflow-x:auto;">
+import numpy as np
+from sklearn.linear_model import LinearRegression
+
+# training data
+x = np.array([[1], [2], [3], [4], [5]])
+y = np.array([2, 4, 6, 8, 10])
+
+model = LinearRegression()
+model.fit(x, y)
+
+prediction = model.predict([[6]])
+print("Prediction for 6 =", prediction)
+    </pre>
+
+    <h2>Conclusion</h2>
+    <p>
+        AI is shaping the future, and Python makes it accessible to everyone. With just a few lines of code,
+        students and developers can create powerful machine learning models that impact the world.
+        Understanding AI today opens doors to innovation tomorrow.
+    </p>
+
+</div>
+
+<footer>
+    © 2025 • Created by Y. Sadhvik Kamal
+</footer>
+
+</body>
+</html>
